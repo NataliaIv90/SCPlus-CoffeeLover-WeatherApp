@@ -1,0 +1,281 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+p,
+li,
+ul,
+input,
+button {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 300;
+  color: #c46c50;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 300;
+  padding: 5px;
+  color: #2b4536
+  text-align: right;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+.plain-border {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 4px 4px 8px #924e3a5d;
+  border-radius: 5px;
+}
+
+.wrap {
+  max-width: 460px;
+  background: radial-gradient(
+    592px at 48.2% 50%,
+    rgba(255, 255, 249, 0.6) 0%,
+    #ead7ac 74.6%
+  );
+}
+
+.search-bar-button {
+  color: #000;
+  background-color: rgba(225, 225, 225, 0.1);
+  height: 33px;
+  width: 33px;
+  transition: all 150ms ease-in;
+}
+
+.search-bar-button:hover {
+  color: #ead7ac;
+  background-color: #c46c50;
+}
+
+.current-weather-details .left {
+  padding: 0 5px;
+  text-align: left;
+}
+.current-weather-details .right {
+  text-align: right;
+  padding: 0;
+}
+
+.current-weather-details {
+  display: inline-block;
+  width: 135px;
+  margin: 0px;
+}
+
+.current-weather-font {
+  font-size: 12px;
+  text-align: center;
+  color:#c46c50
+}
+
+#weather-forecast-wrapper {
+  margin-top: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.future-weather {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 2px;
+  padding-right: 2px;
+  text-align: center;
+  font-size: 12px;
+  color: #c46c50;
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: all 200ms ease-out;
+}
+
+.future-weather:hover {
+  padding-left: 6px;
+  padding-right: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 10px #924e3a5d;
+  cursor: pointer;
+
+  border-radius: 3px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 1px 3px;
+  transition: all 150ms ease-in;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 1px 3px;
+}
+
+#search-bar-wrap {
+  margin: 15px 0px 10px 1px;
+  padding: 0px;
+}
+
+#location-form {
+  display: inline-block;
+}
+
+#search-city-input {
+  width: 352px;
+  line-height: 30px;
+  padding-left: 10px;
+  transition: all 150ms ease-in-out;
+}
+
+#weather-icon {
+  position: relative;
+  top: 10px;
+  width: 70%;
+  display: block;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+#temperature-scale {
+  display: inline-block;
+  font-size: 15px;
+  vertical-align: top;
+}
+
+#current-weather-font {
+  text-align: left;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.advice-heading {
+  color:#2b4536;
+  opacity: 0.5;
+  font-size: 12px;
+  padding-top: 10px;
+  text-align: left;
+  padding-left: 10px;
+
+}
+
+#advise {
+  font-size: 11px;
+  opacity: 0.8;
+  padding-top: 5px;
+  text-align: left;
+  padding-left: 10px;
+
+}
+.scale-link {
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.scale-link.active {
+  color: #1f3227;
+  cursor: default;
+}
+
+.scale-link.active:hover {
+  text-decoration: none;
+}
+
+.scale-link {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 300;
+  transition: all 150ms ease-in-out;
+}
+
+.scale-link:hover {
+  color: rgba(0, 0, 0);
+  font-weight: 400;
+}
+
+.active {
+  color: #000;
+  font-weight: 400;
+}
+
+#current-weather-top {
+  height: 100px;
+  padding-left: 5px;
+}
+
+#current-weather-bottom {
+  margin-top: 5px;
+}
+
+#current-weather {
+  background-color: rgba(256, 256, 256, 0.1);
+  padding: 5px;
+}
+
+#current-weather-details {
+  padding: 10px 0;
+}
+
+#search-city-input:hover,
+#search-city-input:active,
+#current-weather:hover,
+button:hover {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 10px #924e3a5d;
+}
+
+#footer {
+  font-size: 12px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+  margin: 7px;
+}
+
+#linkedin-footer-link:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  background: linear-gradient(
+    rgba(167, 167, 255, 0.5) 30%,
+    rgba(255, 238, 0, 0.5) 80%
+  );
+  border-radius: 5px;
+}
+
+.forecast-icon {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
+  width: 75%;
+}
+
+.forecast-date {
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.min-temperature {
+  color: rgba(0, 0, 0, 0.6);
+}

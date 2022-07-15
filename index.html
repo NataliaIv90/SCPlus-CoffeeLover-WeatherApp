@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/ed623032c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>☕ Coffee WeatherApp 🌡</title>
+  </head>
+
+  <body>
+    <div class="container wrap plain-border">
+      <!-- Search bar -->
+      <div id="search-bar-wrap">
+        <form id="location-form">
+          <input
+            type="text"
+            placeholder="I am going to drink my coffee in..."
+            class="plain-border"
+            id="search-city-input"
+            autocomplete="off"
+            autofocus="on"
+          />
+          <!--  -->
+
+          <button
+            class="add-on plain-border search-bar-button"
+            id="search-button"
+            type="submit"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <button
+          type="button"
+          id="current-location-button"
+          class="plain-border search-bar-button"
+        >
+          <i class="fa-solid fa-location-dot"></i>
+        </button>
+      </div>
+      <!-- Main section with current information -->
+
+      <div>
+        <div id="current-weather" class="plain-border">
+          <!-- City name + current temperature           -->
+          <div id="current-weather-top">
+            <div class="row">
+              <div class="col-8">
+                <h1 id="cityName"></h1>
+                <p class="advice-heading">Your coffee prediction is:</p>
+                <p id="advise"></p>
+              </div>
+              <div class="col-4">
+                <h2>
+                  <strong id="temperature"></strong>
+                  <span id="temperature-scale">
+                    <a href="#" class="scale-link active" id="celcius-link"
+                      >℃</a
+                    >
+                    |
+                    <a href="#" class="scale-link" id="fahrenheit-link">℉</a>
+                  </span>
+                </h2>
+              </div>
+            </div>
+          </div>
+          <!-- Current weather details -->
+
+          <ul id="current-weather-bottom">
+            <!-- Left side -->
+
+            <li class="current-weather-details">
+              <ul class="current-weather-font">
+                <li id="currentDay"></li>
+                <li id="currentDate"></li>
+              </ul>
+            </li>
+
+            <!-- center part -->
+
+            <li class="current-weather-details" id="current-weather-icon"></li>
+
+            <!-- right side -->
+
+            <li class="current-weather-details">
+              <ul class="current-weather-font">
+                <li>Clouds: <span id="clouds"> </span>%</li>
+                <li>
+                  Wind: <span id="wind"> </span>
+                  <span id="wind-speed-units">km/h</span>
+                </li>
+                <li>Humidity: <span id="hymidity"> </span>%</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- weather forecast for 5 days -->
+        <div id="weather-forecast-wrapper">
+          <!-- <div class="col-3"> -->
+          <!-- <div class="future-weather">
+              <div class="day">Fri</div>
+              <div class="date">13/05</div>
+
+              <img
+                class="forecast-icon"
+                src="images/animated/rainy-1.svg"
+                alt=""
+              />
+              <div class="forecast-temperature">5° 15°</div>
+            </div> -->
+          <!-- </div> -->
+        </div>
+      </div>
+      <!-- footer with my contact info -->
+
+      <footer>
+        <div id="footer">
+          <a
+            href="https://github.com/NataliaIv90/SCPlus-WeatherApp-Project"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-link"
+            >Open-source code</a
+          >
+          by
+          <a
+            href="https://www.linkedin.com/in/natalia-ivantsova-46017b238/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-link"
+            id="linkedin-footer-link"
+            >Natalia Ivantsova</a
+          >
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
