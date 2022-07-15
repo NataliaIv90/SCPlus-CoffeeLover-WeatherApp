@@ -138,7 +138,7 @@ function showAdvice(iconNumber) {
     "50d":
       "Cold brew: steep coffee grounds in cold or room temperature water for at least 12 hours ",
     "01n":
-      "This night is perfect for a stargazing. Don't forget a cup of your favourite coffee",
+      "This night is perfect for a stargazing with a cup of your favourite coffee",
     "02n": "Evening walking will help improve your sleep",
     "03n":
       "Espresso Con Panna: a shot of espresso served with a swirl of whipped cream on top",
